@@ -1,27 +1,56 @@
-# Copyright (c) 2006,2007 Mitch Garnaat http://garnaat.org/
-#
-# Permission is hereby granted, free of charge, to any person obtaining a
-# copy of this software and associated documentation files (the
-# "Software"), to deal in the Software without restriction, including
-# without limitation the rights to use, copy, modify, merge, publish, dis-
-# tribute, sublicense, and/or sell copies of the Software, and to permit
-# persons to whom the Software is furnished to do so, subject to the fol-
-# lowing conditions:
-#
-# The above copyright notice and this permission notice shall be included
-# in all copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-# OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABIL-
-# ITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT
-# SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
-# WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-# IN THE SOFTWARE.
-#
-from boto.pyami.scriptbase import ScriptBase
+#%%
+print("Hello world")
+print(5 / 8)
+print (7+10)
+print(10/3, 3/10) # print numerical divisions
+print(10//3, 3//10) # print quotients from divisions
+print(10%3, 3%10) # print remainders from divisions
 
-class HelloWorld(ScriptBase):
+#%%
+astring = "Thank you"
+anum = 3.14159265358979323846
+cnt = 1
+# Many different ways to print out the same line
+print("%d. I want to say %s" % (cnt,astring) )
+cnt+=1
+print(cnt,". I want to say" + astring )
+cnt+=1
+print(cnt, ". I want to say",astring )
+cnt+=1
+print("%d. I want to say %s, my sweetie %.3f" % (cnt,astring,anum) )
+cnt+=1
+print("%d. I want to say %s, my sweetie digit %d" % (cnt,astring,anum) )
+cnt+=1
+print("%d. I want to say %s, my sweetie long %f" % (cnt,astring,anum) )
+cnt+=1
+# For python 3.6+, we can use the f-string
+print(f"{cnt}. I want to say {astring}, my sweetie long {anum.__round__(3)}")
+cnt+=1
+# see https://python-reference.readthedocs.io/en/latest/docs/str/formatting.html
+# s-string, d-digit (int), f-float
+# 
+# side note:  
+# for more info on the new python f-string since python 3.6, see
+# for example: https://cito.github.io/blog/f-strings/
+#
+# also, see https://docs.python.org/3/reference/lexical_analysis.html#literals
+# for info on f-string, r-string, b-string, etc.
 
-    def main(self):
-        self.log('Hello World!!!')
+
+#%%[markdown]
+#
+# # Python Class 01
+# 
+# This is our first class of the semester.
+# Hello to everyone.   
+# Two spaces in the previous line doesn't make a new line in this environment. 
+#
+# You will need a blank line to get a new paragraph.
+
+# The above is not considered a blank line without the # sign.
+#
+# This can get you a [link](http://www.gwu.edu).
+#
+# You can find some cheatsheets to do other basic stuff like bold-face, italicize, tables, etc.
+
+# %%
