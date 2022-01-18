@@ -55,6 +55,15 @@ coverage.xml
 *.mo
 *.pot
 
+*.log
+!important.log
+#Prepending an exclamation mark to a pattern negates it. If a file matches a pattern, but also matches a negating pattern defined later in the file, it will not be ignored.
+
+*.log
+!important/*.log
+trace.*
+#Patterns defined after a negating pattern will re-ignore any previously negated files.
+
 # Django stuff:
 *.log
 local_settings.py

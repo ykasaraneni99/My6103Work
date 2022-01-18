@@ -1,17 +1,17 @@
 #%%
-print("Hello world")
+print("Hello world Yasaswi")
 print(5 / 8)
 print (7+10)
-print(10/3, 3/10) # print numerical divisions
-print(10//3, 3//10) # print quotients from divisions
-print(10%3, 3%10) # print remainders from divisions
+print(101/3, 3/102) # print numerical divisions
+print(101//3, 3//102) # print quotients from divisions
+print(101%3, 3%102) # print remainders from divisions
 
 #%%
-astring = "Thank you"
+astring = "good bye"
 anum = 3.14159265358979323846
 cnt = 1
 # Many different ways to print out the same line
-print("%d. I want to say %s" % (cnt,astring) )
+print("%d. I want to tell %s" % (cnt,astring) )
 cnt+=1
 print(cnt,". I want to say" + astring )
 cnt+=1
